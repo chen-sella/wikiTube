@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Prata&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>WikiTube</title>
+</head>
+
+<body onload="onInit()">
+    <header class="main-header">
+        <h2 class="logo">Wikitube</h2>
+        <div class="search-container">
+            <input name="search" type="search" placeholder="Search">
+            <button onclick="onSearchData()">Search</button>
+        </div>
+    </header>
+    <main>
+        <div class="left-col">
+            <div class="videos-info-container"></div>
+        </div>
+        <div class="right-col">
+            <section class="video-player">
+                <iframe class="play-vid-container" src="">
+
+                </iframe>
+            </section>
+            <section class="wiki-container">
+
+            </section>
+        </div>
+    </main>
+
+    <script src="lib/axios.js"></script>
+    <script src="services/storage-service.js"></script>
+    <script src="services/service.js"></script>
+    <script src="controller.js"></script>
+
+</body>
+
+</html>
